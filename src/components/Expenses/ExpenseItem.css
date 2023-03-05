@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #3f3f3f;
     padding: 0.5rem;
     margin: 1rem 0;
     border-radius: 12px;
@@ -33,6 +34,13 @@
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 12px;
+}
+
+.eventButton{
+  border-radius: 10px;
+  background-color: aquamarine;
+  margin-left: 10px;
+  padding: 5px;
 }
 
 @media (min-width: 580px) {
