@@ -36,13 +36,6 @@
     border-radius: 12px;
 }
 
-.eventButton{
-  border-radius: 10px;
-  background-color: aquamarine;
-  margin-left: 10px;
-  padding: 5px;
-}
-
 @media (min-width: 580px) {
     .expense-item__description {
       flex-direction: row;

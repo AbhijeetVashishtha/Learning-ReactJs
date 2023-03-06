@@ -5,25 +5,13 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
 const ExpenseItem = (props) => {
-    const [title, setTitle] = useState(props.title);
-    const titleHandler = () => {
-        setTitle('Updated!!!');
-        console.log(title);
-    }
-    const [amount, setAmount] = useState(props.amount);
-    const amountHandler = () => {
-        setAmount('100');
-        console.log(amount);
-    }
     return (
         <Card className="expense-item">
            <ExpenseDate date={props.date}></ExpenseDate>
            <div className="expense-item__description">
-                <h2>{title}</h2>
-                <div className="expense-item__price">Rs.{amount}</div>
+                <h2>{props.title}</h2>
+                <div className="expense-item__price">Rs.{props.amount}</div>
             </div>
-            <button className="eventButton" onClick ={titleHandler}>Update Title</button>
-            <button className="eventButton" onClick ={amountHandler}>Update Amount</button>
         </Card>
     );
 }
